@@ -94,7 +94,7 @@ function updateDecorations() {
     if (foundCuda) {
         outputChannel.appendLine('Found CUDA pattern: ' + matchedPattern);
         // Play the revving sound
-        const soundPath = path.join(__dirname, '..', 'media', 'rev.mp3');
+        const soundPath = path.join(__dirname, '..', 'media', 'fart.mp3');
         outputChannel.appendLine('Attempting to play sound from: ' + soundPath);
         playSound(soundPath);
     }
