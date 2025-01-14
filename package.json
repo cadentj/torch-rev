@@ -1,0 +1,42 @@
+{
+  "name": "torch-revving",
+  "displayName": "PyTorch GPU Revving",
+  "description": "Plays engine revving sounds when loading tensors to GPU",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:python"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "torch-revving.enable",
+        "title": "Enable PyTorch GPU Sound Effects"
+      },
+      {
+        "command": "torch-revving.disable",
+        "title": "Disable PyTorch GPU Sound Effects"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile"
+  },
+  "dependencies": {
+    "play-sound": "^1.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.60.0",
+    "typescript": "^5.0.0"
+  }
+}
